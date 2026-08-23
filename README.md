@@ -91,13 +91,40 @@ I'm a **Product & Data Analyst** who lives at the intersection of user behavior,
 
 ### 👻 Pac-Man Eating My Contributions
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/Payal3214/Payal3214/output/pacman-contribution-graph-dark.svg" alt="pacman contribution graph" width="100%"/>
-</p>
+name: Generate Pac-Man Contribution Snake
 
-> Animated by a scheduled GitHub Action ([Platane/snk](https://github.com/Platane/snk)) — updates automatically every day. See setup below.
+on:
+  schedule:
+    # runs once a day at 00:00 UTC — updates the animation with fresh contributions
+    - cron: "0 0 * * *"
+  workflow_dispatch: {}
+  push:
+    branches:
+      - main
 
----
+jobs:
+  generate:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate contribution snake SVG/GIF
+        uses: Platane/snk@v3
+        id: snake-gif
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/pacman-contribution-graph-dark.svg?palette=github-dark&color_snake=%23FFD700&color_dots=%23238636,%23196c2e,%230e4429,%2321262d
+            dist/pacman-contribution-graph.svg?palette=github&color_snake=%23FFD700
+
+      - name: Push generated files to the "output" branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
 
 ### 🏆 GitHub Trophies
 
