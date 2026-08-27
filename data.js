@@ -76,7 +76,22 @@ const PORTFOLIO_DATA = {
       links: [
         { label: "Read on Notion", url: "https://placid-tartan-24c.notion.site/3be01c0d796980199312de36bc4b57ab?v=3be01c0d7969807ca578000cee087faa" }
       ]
-    }
+    },
+           {
+  episode: "S1:E4",
+  title: "Nykaa Annual Report RAG Chatbot",
+  subtitle: "Retrieval-Augmented Generation — Applied AI Project",
+  tags: ["LangChain", "RAG", "LLM"],
+  stats: [
+    { label: "Inference cost", value: "$0 (local)" },
+    { label: "Embedding model", value: "MiniLM-L6-v2" }
+  ],
+  description: "Built a retrieval-augmented generation pipeline that answers natural-language questions over Nykaa's 2024–25 annual report — chunking and embedding the filing with free MiniLM sentence embeddings, storing vectors in ChromaDB, and grounding answers in a locally-run FLAN-T5 model so the whole stack runs offline with zero API cost. Built to test how a lightweight, self-hosted RAG stack holds up against long, structured financial documents — a pattern directly transferable to internal 'ask your PRD/data-room' tools.",
+  coverGradient: "linear-gradient(135deg, #831843, #1a0e17)",
+  links: [
+    { label: "View on GitHub", url: "https://github.com/Payal3214/Nykaa-Annual-Report-RAG-Chatbot" }
+  ]
+}
 
     // --- copy from here to add a new case study or PRD ---
     // {
