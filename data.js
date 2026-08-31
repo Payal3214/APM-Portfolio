@@ -110,24 +110,11 @@ const PORTFOLIO_DATA = {
 }
 
 
-
-     
-    // --- copy from here to add a new case study or PRD ---
-    // {
-    //   episode: "S1:E4",
-    //   title: "Your New Case Study Title",
-    //   subtitle: "Company — Case Study",
-    //   tags: ["Tag One", "Tag Two"],
-    //   stats: [ { label: "Metric", value: "X" }, { label: "Metric", value: "Y" } ],
-    //   description: "2-3 sentence summary of the problem, what you did, and the outcome.",
-    //   coverGradient: "linear-gradient(135deg, #333, #111)",
-    //   links: [ { label: "Read it", url: "https://your-link.com" } ]
-    // },
   ],
 
   originStory: [
     "I come from a business family, so before I had a word for it, I already understood product: I grew up watching the products we sold, the problems they solved for people, and the outcomes that told us whether we were actually helping. Watching a solution turn into a benefit for someone else is where my interest in business — and the people around it — started.",
-    "That curiosity now shows up as a habit. My favorite podcasts aren't entertainment, they're research: why a company holds back a launch, how a founder noticed a mass problem and built a company around solving it, how a SaaS model finds a small, painful problem and turns it profitable. Giving a solution and creating value from it is, honestly, in my blood.",
+    "That curiosity now shows up as a habit. My favorite podcasts aren't entertainment; they're research: why a company holds back a launch, how a founder noticed a mass problem and built a company around solving it, how a SaaS model finds a small, painful problem and turns it profitable. Giving a solution and creating value from it is, honestly, in my blood.",
     "And I relate to data the way some people relate to stories — an outcome isn't a number to me, it's the ending of a decision someone made. That's the lens I bring to product: frame the real problem, follow the evidence, and ship something that measurably helps."
   ],
 
