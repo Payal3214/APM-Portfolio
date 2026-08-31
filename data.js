@@ -93,6 +93,25 @@ const PORTFOLIO_DATA = {
   ]
 }
 
+      {
+  episode: "S1:E5",
+  title: "WEWORK: The Product Problem behind the Collapse !",
+  subtitle: "A retrospective product case study exploring what product and data could—and could not—have influenced in WeWork’s collapse.",
+  tags: ["Problem Framing", "PRD", "Product Strategy", "Product Case Study"],
+  stats: [
+    { label: "Inference cost", value: "$0 (local)" },
+    { label: "Embedding model", value: "MiniLM-L6-v2" }
+  ],
+  description: " Diagnosed WeWork's collapse as a combination of governance, business-model, and unit-economics failures, then identified the product-solvable gap and designed “WeWork Pulse,” a demand intelligence platform for risk-adjusted expansion decisions.",
+  coverGradient: "linear-gradient(135deg, #831843, #1a0e17)",
+  links: [
+    { label: "View on GitHub", url: "https://placid-tartan-24c.notion.site/WEWORK-The-Product-Problem-Behind-the-Collapse-70001c0d79698296a4ff814d16a9127b" }
+  ]
+}
+
+
+
+     
     // --- copy from here to add a new case study or PRD ---
     // {
     //   episode: "S1:E4",
