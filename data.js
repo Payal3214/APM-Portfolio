@@ -106,7 +106,7 @@ const PORTFOLIO_DATA = {
       description: "Diagnosed WeWork's collapse as a combination of governance, business-model, and unit-economics failures, then identified the product-solvable gap and designed “WeWork Pulse,” a demand intelligence platform for risk-adjusted expansion decisions.",
       coverGradient: "linear-gradient(135deg, #831843, #1a0e17)",
       links: [
-        { label: "View on GitHub", url: "https://placid-tartan-24c.notion.site/WEWORK-The-Product-Problem-Behind-the-Collapse-70001c0d79698296a4ff814d16a9127b" }
+        { label: "View on Notion", url: "https://placid-tartan-24c.notion.site/WEWORK-The-Product-Problem-Behind-the-Collapse-70001c0d79698296a4ff814d16a9127b" }
       ]
     }
   ],
