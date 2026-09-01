@@ -75,7 +75,7 @@ const PORTFOLIO_DATA = {
       ],
       description: "Analyzed 262K+ bookings and 33K+ flights across an 8-aircraft fleet to find which lever — pricing, fare-class mix, or overbooking — was costing the most revenue. Surfaced a 43–66% load-factor gap and a 3x fare-class pricing spread on identical aircraft, then translated the trade-offs into a RICE-prioritized 4-initiative roadmap and a scoped one-page PRD for an analyst-facing pricing dashboard.",
       
-        coverImage: "https://github.com/Payal3214/APM-Portfolio/blob/main/assets/Airline.png",
+        coverImage: "https://raw.githubusercontent.com/Payal3214/APM-Portfolio/main/assets/Airline.png",
        
        coverGradient: "linear-gradient(135deg, #7c2d12, #1c0d05)",
       links: [
