@@ -1,9 +1,15 @@
+
+/* ============================================================
+   CASE STUDY CARDS
+   ============================================================ */
+
 .card-cover {
   position: relative;
   width: 100%;
-  height: 160px;
+  height: 180px;
   overflow: hidden;
   background: #111;
+  border-radius: 8px 8px 0 0;
 }
 
 .card-cover-image {
@@ -12,25 +18,273 @@
   width: 100%;
   height: 100%;
   display: block;
+
   object-fit: cover;
+
+  /* Change this per case study using coverPosition */
   object-position: center center;
+
+  z-index: 1;
+
+  transition: transform 0.35s ease;
+}
+
+.card:hover .card-cover-image {
+  transform: scale(1.03);
 }
 
 .card-cover-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.05),
-    rgba(0, 0, 0, 0.45)
-  );
   z-index: 2;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.05),
+      rgba(0, 0, 0, 0.45)
+    );
+
   pointer-events: none;
 }
 
 .card-cover .ep-label {
   position: absolute;
-  left: 18px;
+  left: 16px;
   bottom: 14px;
   z-index: 3;
+
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+
+  padding: 5px 8px;
+
+  background: rgba(0, 0, 0, 0.65);
+  color: white;
+
+  border-radius: 3px;
 }
+
+
+/* ============================================================
+   CASE STUDY TYPOGRAPHY
+   ============================================================ */
+
+.card-title {
+  font-size: 20px;
+  line-height: 1.2;
+
+  font-weight: 800;
+  letter-spacing: -0.025em;
+
+  margin-bottom: 6px;
+}
+
+.card-subtitle {
+  font-size: 13px;
+  line-height: 1.4;
+
+  font-weight: 500;
+
+  opacity: 0.60;
+
+  margin-bottom: 16px;
+}
+
+.card-desc {
+  font-size: 13px;
+  line-height: 1.55;
+
+  font-weight: 400;
+
+  opacity: 0.78;
+
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+
+/* ============================================================
+   TAGS
+   ============================================================ */
+
+.card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+
+  margin-bottom: 16px;
+}
+
+.card-tags span {
+  font-size: 10px;
+  font-weight: 700;
+
+  letter-spacing: 0.04em;
+
+  padding: 5px 8px;
+
+  border: 1px solid rgba(255,255,255,0.14);
+  border-radius: 4px;
+
+  opacity: 0.8;
+}
+
+
+/* ============================================================
+   STATS
+   ============================================================ */
+
+.card-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 12px;
+
+  padding: 12px 0;
+
+  border-top: 1px solid rgba(255,255,255,0.08);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.card-stats div {
+  font-size: 10px;
+  line-height: 1.4;
+
+  opacity: 0.55;
+}
+
+.card-stats b {
+  display: block;
+
+  font-size: 17px;
+  line-height: 1.1;
+
+  font-weight: 800;
+
+  opacity: 1;
+
+  margin-bottom: 3px;
+}
+
+
+/* ============================================================
+   PM DECISION
+   ============================================================ */
+
+.card-decision {
+  margin-top: 16px;
+  padding: 12px 14px;
+
+  border-left: 2px solid rgba(255,255,255,0.45);
+
+  background: rgba(255,255,255,0.035);
+}
+
+.decision-label {
+  display: block;
+
+  margin-bottom: 6px;
+
+  font-size: 9px;
+  font-weight: 800;
+
+  letter-spacing: 0.12em;
+
+  opacity: 0.55;
+}
+
+.card-decision p {
+  margin: 0;
+
+  font-size: 12px;
+  line-height: 1.5;
+
+  opacity: 0.8;
+}
+
+
+/* ============================================================
+   LINKS
+   ============================================================ */
+
+.card-links {
+  margin-top: 18px;
+}
+
+.card-links a {
+  font-size: 12px;
+  font-weight: 700;
+
+  text-decoration: none;
+
+  opacity: 0.85;
+}
+
+.card-links a:hover {
+  opacity: 1;
+}
+
+
+/* ============================================================
+   CARD BODY
+   ============================================================ */
+
+.card-body {
+  padding: 18px;
+}
+
+
+/* ============================================================
+   CLEAN FONT HIERARCHY
+   ============================================================ */
+
+body {
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+}
+
+.card-title,
+h1,
+h2,
+h3 {
+  font-family:
+    "Arial Narrow",
+    "Roboto Condensed",
+    "Segoe UI",
+    sans-serif;
+}
+
+
+/* ============================================================
+   MOBILE
+   ============================================================ */
+
+@media (max-width: 768px) {
+
+  .card-cover {
+    height: 170px;
+  }
+
+  .card-title {
+    font-size: 18px;
+  }
+
+  .card-desc {
+    font-size: 12px;
+  }
+
+}
+
+
+
+
+
+
+
+
