@@ -59,7 +59,10 @@ const PORTFOLIO_DATA = {
         { label: "Cart drop-off", value: "45%" }
       ],
       description: "Sessionized 400K+ orders across two e-commerce datasets to trace the funnel from browse to return. Found delivery speed as a primary driver of returns, quantified a 45% cart drop-off and 14% COD cancellation rate, and separated checkout friction from post-purchase experience as two independently actionable problems against a 46% 30-day retention baseline.",
-      coverGradient: "linear-gradient(135deg, #0f3d2e, #0a1c14)",
+
+        coverImage: "./assets/Funnel.png",
+       
+       coverGradient: "linear-gradient(135deg, #0f3d2e, #0a1c14)",
       links: [
         { label: "View on GitHub", url: "https://github.com/Payal3214?tab=repositories" }
       ]
@@ -101,7 +104,10 @@ const PORTFOLIO_DATA = {
         { label: "Embedding model", value: "MiniLM-L6-v2" }
       ],
       description: "Built a retrieval-augmented generation pipeline that answers natural-language questions over Nykaa's 2024–25 annual report — chunking and embedding the filing with free MiniLM sentence embeddings, storing vectors in ChromaDB, and grounding answers in a locally-run FLAN-T5 model so the whole stack runs offline with zero API cost. Built to test how a lightweight, self-hosted RAG stack holds up against long, structured financial documents — a pattern directly transferable to internal 'ask your PRD/data-room' tools.",
-      coverGradient: "linear-gradient(135deg, #831843, #1a0e17)",
+      
+          coverImage: "./assets/Nykaa.png",
+         
+         coverGradient: "linear-gradient(135deg, #831843, #1a0e17)",
       links: [
         { label: "View on GitHub", url: "https://github.com/Payal3214/Nykaa-Annual-Report-RAG-Chatbot" }
       ]
@@ -117,7 +123,10 @@ const PORTFOLIO_DATA = {
         { label: "Embedding model", value: "MiniLM-L6-v2" }
       ],
       description: "Diagnosed WeWork's collapse as a combination of governance, business-model, and unit-economics failures, then identified the product-solvable gap and designed “WeWork Pulse,” a demand intelligence platform for risk-adjusted expansion decisions.",
-      coverGradient: "linear-gradient(135deg, #831843, #1a0e17)",
+      
+        coverImage: "./assets/Wework.png",
+       
+       coverGradient: "linear-gradient(135deg, #831843, #1a0e17)",
       links: [
         { label: "View on Notion", url: "https://placid-tartan-24c.notion.site/WEWORK-The-Product-Problem-Behind-the-Collapse-70001c0d79698296a4ff814d16a9127b" }
       ]
