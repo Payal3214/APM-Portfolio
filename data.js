@@ -60,7 +60,8 @@ const PORTFOLIO_DATA = {
       ],
       description: "Sessionized 400K+ orders across two e-commerce datasets to trace the funnel from browse to return. Found delivery speed as a primary driver of returns, quantified a 45% cart drop-off and 14% COD cancellation rate, and separated checkout friction from post-purchase experience as two independently actionable problems against a 46% 30-day retention baseline.",
 
-         coverImage: "./assets/images/Groww.jpg",
+         coverImage: "./assets/Grow.png",
+coverPosition: "center center",
        
        coverGradient: "linear-gradient(135deg, #0f3d2e, #0a1c14)",
       links: [
@@ -81,7 +82,11 @@ const PORTFOLIO_DATA = {
 
   description: "Analyzed 262K+ bookings and 33K+ flights across an 8-aircraft fleet to find which lever — pricing, fare-class mix, or overbooking — was costing the most revenue. Surfaced a 43–66% load-factor gap and a 3x fare-class pricing spread on identical aircraft, then translated the trade-offs into a RICE-prioritized 4-initiative roadmap and a scoped one-page PRD for an analyst-facing pricing dashboard.",
 
-  coverImage: "./assets/images/Airline.jpg",
+
+coverImage: "./assets/Airline.png",
+coverPosition: "center 25%",
+
+       
 
   coverGradient: "linear-gradient(135deg, #7c2d12, #1c0d05)",
 
@@ -105,7 +110,8 @@ const PORTFOLIO_DATA = {
       ],
       description: "Built a retrieval-augmented generation pipeline that answers natural-language questions over Nykaa's 2024–25 annual report — chunking and embedding the filing with free MiniLM sentence embeddings, storing vectors in ChromaDB, and grounding answers in a locally-run FLAN-T5 model so the whole stack runs offline with zero API cost. Built to test how a lightweight, self-hosted RAG stack holds up against long, structured financial documents — a pattern directly transferable to internal 'ask your PRD/data-room' tools.",
       
-          coverImage: "./assets/images/Nykaa.jpg",
+          coverImage: "./assets/Nykaa.png",
+coverPosition: "center center",
          
          coverGradient: "linear-gradient(135deg, #831843, #1a0e17)",
       links: [
@@ -124,7 +130,8 @@ const PORTFOLIO_DATA = {
       ],
       description: "Diagnosed WeWork's collapse as a combination of governance, business-model, and unit-economics failures, then identified the product-solvable gap and designed “WeWork Pulse,” a demand intelligence platform for risk-adjusted expansion decisions.",
       
-        coverImage: "./assets/images/Wework.jpg",
+        coverImage: "./assets/wework.png",
+coverPosition: "center center",
        
        coverGradient: "linear-gradient(135deg, #831843, #1a0e17)",
       links: [
