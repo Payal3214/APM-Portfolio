@@ -72,7 +72,45 @@ function renderCaseStudies(){
 
         <div class="card-stats">${statsHtml}</div>
 
+
         <p class="card-desc">${cs.description}</p>
+
+${cs.decision ? `
+  <div class="card-decision">
+    <span class="decision-label">PM DECISION</span>
+    <p>${cs.decision}</p>
+  </div>
+` : ''}
+
+
+.card-decision {
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255,255,255,0.10);
+}
+
+.decision-label {
+  display: block;
+  margin-bottom: 7px;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  opacity: 0.65;
+}
+
+.card-decision p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.55;
+  opacity: 0.88;
+}
+
+
+
+
+
+
+        
 
         <div class="card-links">${linksHtml}</div>
       </div>
