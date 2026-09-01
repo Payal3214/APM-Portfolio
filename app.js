@@ -23,12 +23,15 @@ function renderHero(){
   PORTFOLIO_DATA.genres.forEach(g => tags.appendChild(el('span','genre-tag', g)));
 }
 
+
+
+
 function renderCaseStudies(){
   const row = $('#caseStudyRow');
 
   PORTFOLIO_DATA.caseStudies.forEach(cs => {
-    const card = el('article','card');
-    card.setAttribute('tabindex','0');
+    const card = el('article', 'card');
+    card.setAttribute('tabindex', '0');
 
     const linksHtml = cs.links
       .map(l => `<a href="${l.url}" target="_blank" rel="noopener">${l.label} →</a>`)
@@ -42,18 +45,20 @@ function renderCaseStudies(){
       .map(t => `<span>${t}</span>`)
       .join('');
 
+    const coverPosition = cs.coverPosition || 'center center';
+
     card.innerHTML = `
-      <div
-        class="card-cover"
-        style="
-          background-image:
-            linear-gradient(
-              rgba(0,0,0,0.10),
-              rgba(0,0,0,0.50)
-            ),
-            url('${cs.coverImage}');
-        "
-      >
+      <div class="card-cover">
+        <img
+          class="card-cover-image"
+          src="${cs.coverImage}"
+          alt="${cs.title} cover image"
+          style="object-position: ${coverPosition};"
+          onerror="this.style.display='none';"
+        >
+
+        <div class="card-cover-overlay"></div>
+
         <span class="ep-label">${cs.episode}</span>
       </div>
 
@@ -76,6 +81,18 @@ function renderCaseStudies(){
     row.appendChild(card);
   });
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 function renderOrigin(){
   const box = $('#originText');
