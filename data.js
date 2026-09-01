@@ -43,7 +43,7 @@ const PORTFOLIO_DATA = {
       ],
       description: "5 structured user interviews uncovered that investment hesitation came from an interpretation gap, not missing information. Designed a rule-based decision-support layer that translates existing risk/return/portfolio data into a plain-language verdict at the point of comparison, with a moderated usability test and A/B plan to validate impact on decision-to-invest conversion.",
       
-        coverImage: "./assets/images/groww-case-study.jpg",
+         coverImage: "./assets/images/groww-case-study.jpg",
        coverGradient: "linear-gradient(135deg, #7f1d1d, #1c0a0a)",
       links: [
         { label: "Read on Notion", url: "https://placid-tartan-24c.notion.site/GROWW_PM_PORTFOLIO-2ff01c0d796980ae8fdcc846553ac87b" }
@@ -60,7 +60,7 @@ const PORTFOLIO_DATA = {
       ],
       description: "Sessionized 400K+ orders across two e-commerce datasets to trace the funnel from browse to return. Found delivery speed as a primary driver of returns, quantified a 45% cart drop-off and 14% COD cancellation rate, and separated checkout friction from post-purchase experience as two independently actionable problems against a 46% 30-day retention baseline.",
 
-        coverImage: "./assets/Funnel.png",
+         coverImage: "./assets/images/Groww.jpg",
        
        coverGradient: "linear-gradient(135deg, #0f3d2e, #0a1c14)",
       links: [
@@ -81,7 +81,7 @@ const PORTFOLIO_DATA = {
 
   description: "Analyzed 262K+ bookings and 33K+ flights across an 8-aircraft fleet to find which lever — pricing, fare-class mix, or overbooking — was costing the most revenue. Surfaced a 43–66% load-factor gap and a 3x fare-class pricing spread on identical aircraft, then translated the trade-offs into a RICE-prioritized 4-initiative roadmap and a scoped one-page PRD for an analyst-facing pricing dashboard.",
 
-  coverImage: "./assets/Airline.png",
+  coverImage: "./assets/images/Airline.jpg",
 
   coverGradient: "linear-gradient(135deg, #7c2d12, #1c0d05)",
 
@@ -105,7 +105,7 @@ const PORTFOLIO_DATA = {
       ],
       description: "Built a retrieval-augmented generation pipeline that answers natural-language questions over Nykaa's 2024–25 annual report — chunking and embedding the filing with free MiniLM sentence embeddings, storing vectors in ChromaDB, and grounding answers in a locally-run FLAN-T5 model so the whole stack runs offline with zero API cost. Built to test how a lightweight, self-hosted RAG stack holds up against long, structured financial documents — a pattern directly transferable to internal 'ask your PRD/data-room' tools.",
       
-          coverImage: "./assets/Nykaa.png",
+          coverImage: "./assets/images/Nykaa.jpg",
          
          coverGradient: "linear-gradient(135deg, #831843, #1a0e17)",
       links: [
@@ -124,7 +124,7 @@ const PORTFOLIO_DATA = {
       ],
       description: "Diagnosed WeWork's collapse as a combination of governance, business-model, and unit-economics failures, then identified the product-solvable gap and designed “WeWork Pulse,” a demand intelligence platform for risk-adjusted expansion decisions.",
       
-        coverImage: "./assets/Wework.png",
+        coverImage: "./assets/images/Wework.jpg",
        
        coverGradient: "linear-gradient(135deg, #831843, #1a0e17)",
       links: [
