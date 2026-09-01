@@ -65,21 +65,29 @@ const PORTFOLIO_DATA = {
       ]
     },
     {
-      episode: "S1:E3",
-      title: "Airline Revenue Optimization",
-      subtitle: "Pricing & Revenue Management — Case Study",
-      tags: ["SQL", "RICE", "PRD"],
-      stats: [
-        { label: "Bookings analyzed", value: "262K+" },
-        { label: "Fare-class spread", value: "3x" }
-      ],
-      description: "Analyzed 262K+ bookings and 33K+ flights across an 8-aircraft fleet to find which lever — pricing, fare-class mix, or overbooking — was costing the most revenue. Surfaced a 43–66% load-factor gap and a 3x fare-class pricing spread on identical aircraft, then translated the trade-offs into a RICE-prioritized 4-initiative roadmap and a scoped one-page PRD for an analyst-facing pricing dashboard.",
-      
-        coverImage: "https://raw.githubusercontent.com/Payal3214/APM-Portfolio/main/assets/Airline.png",
-       
-       coverGradient: "linear-gradient(135deg, #7c2d12, #1c0d05)",
-      links: [
-        { label: "Read on Notion", url: "https://placid-tartan-24c.notion.site/3be01c0d796980199312de36bc4b57ab?v=3be01c0d7969807ca578000cee087faa" }
+
+  episode: "S1:E3",
+  title: "Airline Revenue Optimization",
+  subtitle: "Pricing & Revenue Management — Case Study",
+  tags: ["SQL", "RICE", "PRD"],
+
+  stats: [
+    { label: "Bookings analyzed", value: "262K+" },
+    { label: "Fare-class spread", value: "3x" }
+  ],
+
+  description: "Analyzed 262K+ bookings and 33K+ flights across an 8-aircraft fleet to find which lever — pricing, fare-class mix, or overbooking — was costing the most revenue. Surfaced a 43–66% load-factor gap and a 3x fare-class pricing spread on identical aircraft, then translated the trade-offs into a RICE-prioritized 4-initiative roadmap and a scoped one-page PRD for an analyst-facing pricing dashboard.",
+
+  coverImage: "./assets/Airline.png",
+
+  coverGradient: "linear-gradient(135deg, #7c2d12, #1c0d05)",
+
+  links: [
+    {
+      label: "Read on Notion",
+      url: "https://placid-tartan-24c.notion.site/3be01c0d796980199312de36bc4b57ab?v=3be01c0d7969807ca578000cee087faa"
+    }
+  
       ]
     },
            
