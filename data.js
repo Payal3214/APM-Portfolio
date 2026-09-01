@@ -34,7 +34,7 @@ const PORTFOLIO_DATA = {
   caseStudies: [
     {
       episode: "S1:E1",
-      title: "Why Users Leave Groww Before Investing"
+      title: "Why Users Leave Groww Before Investing",
       subtitle: "Groww — Product Case Study",
       tags: ["User Research", "0→1"],
       stats: [
