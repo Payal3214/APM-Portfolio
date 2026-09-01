@@ -34,7 +34,7 @@ const PORTFOLIO_DATA = {
   caseStudies: [
     {
       episode: "S1:E1",
-      title: "Reducing Investment Decision Friction",
+      title: "Why Users Leave Groww Before Investing"
       subtitle: "Groww — Product Case Study",
       tags: ["User Research", "0→1"],
       stats: [
@@ -42,7 +42,7 @@ const PORTFOLIO_DATA = {
         { label: "Left app to research", value: "2/5" }
       ],
       description: "5 structured user interviews uncovered that investment hesitation came from an interpretation gap, not missing information. Designed a rule-based decision-support layer that translates existing risk/return/portfolio data into a plain-language verdict at the point of comparison, with a moderated usability test and A/B plan to validate impact on decision-to-invest conversion.",
-      
+      decision: "Build a rule-based decision-support layer that translates existing investment data into a plain-language verdict at the moment of comparison.",
 
        coverImage: "./assets/Grow.png",
 coverPosition: "center center",
@@ -55,7 +55,7 @@ coverPosition: "center center",
     },
     {
       episode: "S1:E2",
-      title: "End-to-End Funnel Drop-off Analysis",
+      title: "Why 45% of Carts Drop Before Purchase",
       subtitle: "RetailRocket × Olist — Data Case Study",
       tags: ["Product Analytics", "SQL"],
       stats: [
@@ -63,7 +63,7 @@ coverPosition: "center center",
         { label: "Cart drop-off", value: "45%" }
       ],
       description: "Sessionized 400K+ orders across two e-commerce datasets to trace the funnel from browse to return. Found delivery speed as a primary driver of returns, quantified a 45% cart drop-off and 14% COD cancellation rate, and separated checkout friction from post-purchase experience as two independently actionable problems against a 46% 30-day retention baseline.",
-
+      decision: "Treat checkout friction and post-purchase experience as separate product problems, prioritizing delivery speed and checkout interventions based on their measurable impact.",
       coverImage: "./assets/Funnel analysis.png",
       coverPosition: "center center",
        
@@ -76,7 +76,7 @@ coverPosition: "center center",
     {
 
   episode: "S1:E3",
-  title: "Airline Revenue Optimization",
+  title: "Finding the Revenue Leak Across 262K Bookings",
   subtitle: "Pricing & Revenue Management — Case Study",
   tags: ["SQL", "RICE", "PRD"],
 
@@ -86,7 +86,7 @@ coverPosition: "center center",
   ],
 
   description: "Analyzed 262K+ bookings and 33K+ flights across an 8-aircraft fleet to find which lever — pricing, fare-class mix, or overbooking — was costing the most revenue. Surfaced a 43–66% load-factor gap and a 3x fare-class pricing spread on identical aircraft, then translated the trade-offs into a RICE-prioritized 4-initiative roadmap and a scoped one-page PRD for an analyst-facing pricing dashboard.",
-
+  decision: "Prioritize pricing and fare-class interventions before overbooking, using RICE to convert the revenue analysis into a four-initiative roadmap.",
 
 coverImage: "./assets/Airline.png",
 coverPosition: "center 25%",
@@ -106,7 +106,7 @@ coverPosition: "center 25%",
            
       {
       episode: "S1:E4",
-      title: "Nykaa Annual Report RAG Chatbot",
+      title: "Can a Local RAG System Answer Nykaa's Annual Report?",
       subtitle: "Retrieval-Augmented Generation — Applied AI Project",
       tags: ["LangChain", "RAG", "LLM"],
       stats: [
@@ -114,7 +114,7 @@ coverPosition: "center 25%",
         { label: "Embedding model", value: "MiniLM-L6-v2" }
       ],
       description: "Built a retrieval-augmented generation pipeline that answers natural-language questions over Nykaa's 2024–25 annual report — chunking and embedding the filing with free MiniLM sentence embeddings, storing vectors in ChromaDB, and grounding answers in a locally-run FLAN-T5 model so the whole stack runs offline with zero API cost. Built to test how a lightweight, self-hosted RAG stack holds up against long, structured financial documents — a pattern directly transferable to internal 'ask your PRD/data-room' tools.",
-      
+      decision: "Build a lightweight, locally hosted RAG pipeline to test whether structured retrieval can reliably answer questions over a long financial document without API costs.",
           coverImage: "./assets/Nykaa.png",
 coverPosition: "center center",
          
@@ -126,7 +126,7 @@ coverPosition: "center center",
 
     {
       episode: "S1:E5",
-      title: "WEWORK: The Product Problem behind the Collapse !",
+      title: "WeWork: Finding the Product Problem Behind the Collapse",
       subtitle: "A retrospective product case study exploring what product and data could—and could not—have influenced in WeWork’s collapse.",
       tags: ["Problem Framing", "PRD", "Product Strategy", "Product Case Study"],
       stats: [
@@ -134,7 +134,7 @@ coverPosition: "center center",
         { label: "Embedding model", value: "MiniLM-L6-v2" }
       ],
       description: "Diagnosed WeWork's collapse as a combination of governance, business-model, and unit-economics failures, then identified the product-solvable gap and designed “WeWork Pulse,” a demand intelligence platform for risk-adjusted expansion decisions.",
-      
+      decision: "Focus the product opportunity on demand intelligence and risk-adjusted expansion rather than attempting to solve the underlying governance and business-model failures through product alone.",
         coverImage: "./assets/wework.png",
 coverPosition: "center center",
        
