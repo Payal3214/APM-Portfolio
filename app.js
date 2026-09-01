@@ -25,27 +25,54 @@ function renderHero(){
 
 function renderCaseStudies(){
   const row = $('#caseStudyRow');
+
   PORTFOLIO_DATA.caseStudies.forEach(cs => {
     const card = el('article','card');
     card.setAttribute('tabindex','0');
-    const linksHtml = cs.links.map(l => `<a href="${l.url}" target="_blank" rel="noopener">${l.label} →</a>`).join('');
-    const statsHtml = cs.stats.map(s => `<div><b>${s.value}</b>${s.label}</div>`).join('');
-    const tagsHtml = cs.tags.map(t => `<span>${t}</span>`).join('');
+
+    const linksHtml = cs.links
+      .map(l => `<a href="${l.url}" target="_blank" rel="noopener">${l.label} →</a>`)
+      .join('');
+
+    const statsHtml = cs.stats
+      .map(s => `<div><b>${s.value}</b>${s.label}</div>`)
+      .join('');
+
+    const tagsHtml = cs.tags
+      .map(t => `<span>${t}</span>`)
+      .join('');
+
     card.innerHTML = `
-      <div class="card-cover" style="background:${cs.coverGradient}">
+      <div
+        class="card-cover"
+        style="
+          background-image:
+            linear-gradient(
+              rgba(0,0,0,0.10),
+              rgba(0,0,0,0.50)
+            ),
+            url('${cs.coverImage}');
+        "
+      >
         <span class="ep-label">${cs.episode}</span>
       </div>
+
       <div class="card-body">
         <div>
           <div class="card-title">${cs.title}</div>
           <div class="card-subtitle">${cs.subtitle}</div>
         </div>
+
         <div class="card-tags">${tagsHtml}</div>
+
         <div class="card-stats">${statsHtml}</div>
+
         <p class="card-desc">${cs.description}</p>
+
         <div class="card-links">${linksHtml}</div>
       </div>
     `;
+
     row.appendChild(card);
   });
 }
