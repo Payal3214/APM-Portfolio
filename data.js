@@ -43,9 +43,9 @@ const PORTFOLIO_DATA = {
       ],
       description: "5 structured user interviews uncovered that investment hesitation came from an interpretation gap, not missing information. Designed a rule-based decision-support layer that translates existing risk/return/portfolio data into a plain-language verdict at the point of comparison, with a moderated usability test and A/B plan to validate impact on decision-to-invest conversion.",
       decision: "Build a rule-based decision-support layer that translates existing investment data into a plain-language verdict at the moment of comparison.",
-coverImage: "./assets/Grow.png",
-coverPosition: "center center",
-coverGradient: "linear-gradient(135deg, #7f1d1d, #1c0a0a)",
+      coverImage: "./assets/Grow.png",
+      coverPosition: "center center",
+      coverGradient: "linear-gradient(135deg, #7f1d1d, #1c0a0a)",
       links: [
         { label: "Read on Notion", url: "https://placid-tartan-24c.notion.site/GROWW_PM_PORTFOLIO-2ff01c0d796980ae8fdcc846553ac87b" }
       ]
@@ -61,42 +61,35 @@ coverGradient: "linear-gradient(135deg, #7f1d1d, #1c0a0a)",
       ],
       description: "Sessionized 400K+ orders across two e-commerce datasets to trace the funnel from browse to return. Found delivery speed as a primary driver of returns, quantified a 45% cart drop-off and 14% COD cancellation rate, and separated checkout friction from post-purchase experience as two independently actionable problems against a 46% 30-day retention baseline.",
       decision: "Treat checkout friction and post-purchase experience as separate product problems, prioritizing delivery speed and checkout interventions based on their measurable impact.",
-     coverImage: "./assets/Funnel%20analysis.png",
-coverPosition: "center center",
-coverGradient: "linear-gradient(135deg, #0f3d2e, #0a1c14)",
+      coverImage: "./assets/Funnel%20analysis.png",
+      coverPosition: "center center",
+      coverGradient: "linear-gradient(135deg, #0f3d2e, #0a1c14)",
       links: [
         { label: "View on GitHub", url: "https://github.com/Payal3214?tab=repositories" }
       ]
     },
     {
-
-  episode: "S1:E3",
-  title: "Finding the Revenue Leak Across 262K Bookings",
-  subtitle: "Pricing & Revenue Management — Case Study",
-  tags: ["SQL", "RICE", "PRD"],
-
-  stats: [
-    { label: "Bookings analyzed", value: "262K+" },
-    { label: "Fare-class spread", value: "3x" }
-  ],
-
-  description: "Analyzed 262K+ bookings and 33K+ flights across an 8-aircraft fleet to find which lever — pricing, fare-class mix, or overbooking — was costing the most revenue. Surfaced a 43–66% load-factor gap and a 3x fare-class pricing spread on identical aircraft, then translated the trade-offs into a RICE-prioritized 4-initiative roadmap and a scoped one-page PRD for an analyst-facing pricing dashboard.",
-  decision: "Prioritize pricing and fare-class interventions before overbooking, using RICE to convert the revenue analysis into a four-initiative roadmap.",
-coverImage: "./assets/Airline.png",
-coverPosition: "center 35%",
-coverGradient: "linear-gradient(135deg, #7c2d12, #1c0d05)",
-
-
-  links: [
-    {
-      label: "Read on Notion",
-      url: "https://placid-tartan-24c.notion.site/3be01c0d796980199312de36bc4b57ab?v=3be01c0d7969807ca578000cee087faa"
-    }
-  
+      episode: "S1:E3",
+      title: "Finding the Revenue Leak Across 262K Bookings",
+      subtitle: "Pricing & Revenue Management — Case Study",
+      tags: ["SQL", "RICE", "PRD"],
+      stats: [
+        { label: "Bookings analyzed", value: "262K+" },
+        { label: "Fare-class spread", value: "3x" }
+      ],
+      description: "Analyzed 262K+ bookings and 33K+ flights across an 8-aircraft fleet to find which lever — pricing, fare-class mix, or overbooking — was costing the most revenue. Surfaced a 43–66% load-factor gap and a 3x fare-class pricing spread on identical aircraft, then translated the trade-offs into a RICE-prioritized 4-initiative roadmap and a scoped one-page PRD for an analyst-facing pricing dashboard.",
+      decision: "Prioritize pricing and fare-class interventions before overbooking, using RICE to convert the revenue analysis into a four-initiative roadmap.",
+      coverImage: "./assets/Airline.png",
+      coverPosition: "center 35%",
+      coverGradient: "linear-gradient(135deg, #7c2d12, #1c0d05)",
+      links: [
+        {
+          label: "Read on Notion",
+          url: "https://placid-tartan-24c.notion.site/3be01c0d796980199312de36bc4b57ab?v=3be01c0d7969807ca578000cee087faa"
+        }
       ]
     },
-           
-      {
+    {
       episode: "S1:E4",
       title: "Can a Local RAG System Answer Nykaa's Annual Report?",
       subtitle: "Retrieval-Augmented Generation — Applied AI Project",
@@ -107,18 +100,17 @@ coverGradient: "linear-gradient(135deg, #7c2d12, #1c0d05)",
       ],
       description: "Built a retrieval-augmented generation pipeline that answers natural-language questions over Nykaa's 2024–25 annual report — chunking and embedding the filing with free MiniLM sentence embeddings, storing vectors in ChromaDB, and grounding answers in a locally-run FLAN-T5 model so the whole stack runs offline with zero API cost. Built to test how a lightweight, self-hosted RAG stack holds up against long, structured financial documents — a pattern directly transferable to internal 'ask your PRD/data-room' tools.",
       decision: "Build a lightweight, locally hosted RAG pipeline to test whether structured retrieval can reliably answer questions over a long financial document without API costs.",
-         coverImage: "./assets/Nykaa.png",
-coverPosition: "center center",
-coverGradient: "linear-gradient(135deg, #831843, #1a0e17)",
+      coverImage: "./assets/Nykaa.png",
+      coverPosition: "center center",
+      coverGradient: "linear-gradient(135deg, #831843, #1a0e17)",
       links: [
         { label: "View on GitHub", url: "https://github.com/Payal3214/Nykaa-Annual-Report-RAG-Chatbot" }
       ]
     },
-
     {
       episode: "S1:E5",
       title: "WeWork: Finding the Product Problem Behind the Collapse",
-      subtitle: "A retrospective product case study exploring what product and data could—and could not—have influenced in WeWork’s collapse.",
+      subtitle: "A retrospective product case study exploring what product and data could—and could not—have influenced in WeWork's collapse.",
       tags: ["Problem Framing", "PRD", "Product Strategy", "Product Case Study"],
       stats: [
         { label: "Inference cost", value: "$0 (local)" },
@@ -126,13 +118,9 @@ coverGradient: "linear-gradient(135deg, #831843, #1a0e17)",
       ],
       description: "Diagnosed WeWork's collapse as a combination of governance, business-model, and unit-economics failures, then identified the product-solvable gap and designed “WeWork Pulse,” a demand intelligence platform for risk-adjusted expansion decisions.",
       decision: "Focus the product opportunity on demand intelligence and risk-adjusted expansion rather than attempting to solve the underlying governance and business-model failures through product alone.",
-
-
       coverImage: "./assets/wework.png",
-coverPosition: "center center",
-coverGradient: "linear-gradient(135deg, #831843, #1a0e17)",
-
-         
+      coverPosition: "center center",
+      coverGradient: "linear-gradient(135deg, #831843, #1a0e17)",
       links: [
         { label: "View on Notion", url: "https://placid-tartan-24c.notion.site/WEWORK-The-Product-Problem-Behind-the-Collapse-70001c0d79698296a4ff814d16a9127b" }
       ]
@@ -203,4 +191,3 @@ coverGradient: "linear-gradient(135deg, #831843, #1a0e17)",
     { label: "Call", url: "tel:+916372961223" }
   ]
 };
-
