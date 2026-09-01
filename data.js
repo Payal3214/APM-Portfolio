@@ -42,7 +42,9 @@ const PORTFOLIO_DATA = {
         { label: "Left app to research", value: "2/5" }
       ],
       description: "5 structured user interviews uncovered that investment hesitation came from an interpretation gap, not missing information. Designed a rule-based decision-support layer that translates existing risk/return/portfolio data into a plain-language verdict at the point of comparison, with a moderated usability test and A/B plan to validate impact on decision-to-invest conversion.",
-      coverGradient: "linear-gradient(135deg, #7f1d1d, #1c0a0a)",
+      
+        coverImage: "./assets/images/groww-case-study.jpg",
+       coverGradient: "linear-gradient(135deg, #7f1d1d, #1c0a0a)",
       links: [
         { label: "Read on Notion", url: "https://placid-tartan-24c.notion.site/GROWW_PM_PORTFOLIO-2ff01c0d796980ae8fdcc846553ac87b" }
       ]
